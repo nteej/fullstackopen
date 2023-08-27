@@ -33,18 +33,12 @@ function App() {
   const course = 'Half Stack application development'
   const part = ['Fundamentals of React', 'Using props to pass data', 'State of a component']
   const exercises = [10, 7, 14]
-  const exercises1 = 10
-  const part2 = 'Using props to pass data'
-  const exercises2 = 7
-  const part3 = 'State of a component'
-  const exercises3 = 14
-
-
+  
   return (
     <>
       <Header course={course} />
       <Content part={part} exercises={exercises} />
-      <Total total={exercises1 + exercises2 + exercises3} />
+      <Total total={exercises[0] + exercises[1] + exercises[2]} />
     </>
   )
 }
